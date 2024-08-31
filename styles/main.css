@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --navbar-bgcolor: #1F3A1F;
+    --border-radius : 10px;
+    --main-font : "Outfit";
+}
+.navigation-section{
+    width: 100%;
+    height: 50px;
+    background-color: var(--navbar-bgcolor);
+}
+.navigation-section .menu-container{
+    width: 35%;
+    height: 100%;
+    /* background-color: red; */
+    font-family: var(--main-font);
+}
+.menu-container .nav-menu{
+    display: flex;
+    list-style: none;
+}
+.menu-container .nav-menu li{
+    padding: 15px;
+    position: relative;
+}
+.menu-container .nav-menu li a{
+    text-decoration: none;
+    color: white;
+}
+.dropdown{
+    list-style: none;
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    width: 150px;
+    margin-left: -20px;
+    display: none;
+    background-color: var(--navbar-bgcolor);
+}
+.dropdown li {
+    display: block;
+    margin: 0;
+    text-align: left;
+}
+.nav-menu li:hover .dropdown{
+    display: block;
+}
