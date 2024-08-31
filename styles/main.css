@@ -71,3 +71,53 @@
     cursor: pointer;
     opacity: 1;
 }
+.logo-search-container{
+    width: 100%;
+    height: 80px;
+    border-bottom:1px solid rgba(128, 128, 128, 0.584);
+    font-family: var(--main-font);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+.logo-search-container .account-manager{
+    width: 9%;
+    height: 70%;
+    margin-top: 8px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.account-manager:hover{
+    cursor: pointer;
+}
+.logo-search-container h2{
+    color: var(--navbar-bgcolor);
+    margin-left: 34px;
+}
+.logo-search-container h2:hover{
+    cursor: pointer;
+}
+.input-container{
+    width: 20%;
+    height: 40%;
+    position: relative;
+}
+.input-container :last-child{
+    position: absolute;
+    right: 2%;
+    top: 24%;
+
+}
+.logo-search-container input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 1px solid black ;
+    border-radius: var(--border-radius);
+    background-color: #d8d8dac7;
+    padding-left: 10px;
+}
