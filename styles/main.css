@@ -7,6 +7,8 @@
     --navbar-bgcolor: #1F3A1F;
     --border-radius : 10px;
     --main-font : "Outfit";
+    --aqua: #40ECCD;
+    --sky-blue: #40A4EB;
 }
 .navigation-section{
     width: 100%;
@@ -111,7 +113,6 @@
     position: absolute;
     right: 2%;
     top: 24%;
-
 }
 .logo-search-container input{
     width: 100%;
@@ -139,4 +140,34 @@
     background-image: url('/images/Hero-Image-Size.png');
     opacity: 0.2;
     top: 0;
+}
+.hero-container .hero-text-container{
+    width: 35%;
+    height: 50%;
+    position: absolute;
+    top: 23%;
+    left: 2%;
+    font-family: var(--main-font);
+}
+.hero-text-container :first-child{
+    font-size: 55px;
+    color: var(--aqua);
+    font-weight: 400;
+}
+.hero-text-container :nth-child(2){
+    color: var(--sky-blue);
+    line-height: 25px;
+    margin: 20px 0px;
+}
+.btn-explore{
+    width: 120px;
+    height: 35px;
+    border-radius: var(--border-radius);
+    border: none;
+    transition: 0.2s;
+}
+.btn-explore:hover{
+    background-color: var(--aqua);
+    color: white;
+    transition: 0.2s;
 }
