@@ -171,3 +171,25 @@
     color: white;
     transition: 0.2s;
 }
+.hero-container .image-card-container{
+    width: 55%;
+    height: 60%;
+    position: absolute;
+    right: 2%;
+    top: 16%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    gap: 10px;
+    padding: 10px 0px;
+}
+.image-card-container > img{
+    border-radius: var(--border-radius);
+    transition: 0.3s;
+}
+.image-card-container > img:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+
